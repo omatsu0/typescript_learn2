@@ -1,4 +1,5 @@
-const message: string = "Hello TypeScript + Webpack!";
-console.log(message);
+const app = document.getElementById("app");
 
-document.body.innerHTML += `<p>${message}</p>`;
+if (app) {
+  app.textContent = "Hello TypeScript + Webpack!";
+}
