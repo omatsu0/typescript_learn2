@@ -1,7 +1,7 @@
-import "./style.css";
+import { Message } from "./message";
 
 const app = document.getElementById("app");
-
 if (app) {
-  app.textContent = "Hello TypeScript + Webpack!";
+  const msg = new Message("クラスから表示！");
+  app.appendChild(msg.render());
 }
